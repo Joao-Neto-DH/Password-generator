@@ -1,8 +1,8 @@
 {
   "name": "password-generator",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Programa gerador de palavra-passe",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,10 +11,13 @@
     "url": "git+https://github.com/Joao-Neto-DH/Password-generator.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "João Neto",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Joao-Neto-DH/Password-generator/issues"
   },
-  "homepage": "https://github.com/Joao-Neto-DH/Password-generator#readme"
+  "homepage": "https://github.com/Joao-Neto-DH/Password-generator#readme",
+  "dependencies": {
+    "remixicon": "^2.5.0"
+  }
 }
