@@ -2,7 +2,7 @@
 
 Projecto de geração de senhas feito com HTML5, CSS3(Bootstrap5) e Javascript
 
-Layout de natureza original do autor (Desenvolvidor)
+Layout de natureza original do autor (Desenvolvedor)
 
 Projecto tem como principal finalidade gerar senhas seguras de forma automática.
 Abaixo poderás ver/encontrar uma imagem do Layout👇👇
@@ -17,7 +17,7 @@ Pode ainda definir se a senha deve conter caracteres especiais como: @, #, $
 <img src="./.github/layout-password-generator.png" title="Layout do projecto - modal de configurações">
 
 
-Poderá ver o resultado do final do projecto aqui 👉 <a href="https://joao-neto-dh.github.io/Password-generator/">https://joao-neto-dh.github.io/Password-generator/</a>, hospedado nos servidores do github
+Poderá ver o resultado do final do projecto aqui 👉 <a href="https://joao-neto-dh.github.io/Password-generator/" target="_blank">https://joao-neto-dh.github.io/Password-generator/</a>, hospedado nos servidores do github
 
 Siga-me e não esqueça da sua estrela ⭐ ela faz toda diferença para o desenvolvimento
 
@@ -25,7 +25,7 @@ Desenvolvido por João Baptista Dala Lima Neto, desenvolvedor FrontEnd 🤩❤
 
 Contactos:
     <ul>
-        <li><a href="https://www.facebook.com/profile.php?id=100008974907202">Facebook</a></li>
-        <li><a href="https://github.com/Joao-Neto-DH">Gitub</a></li>
-        <li><a href="https://www.linkedin.com/in/jo%C3%A3o-neto-aa2481225/">Linkedln</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100008974907202" target="_blank">Facebook</a></li>
+        <li><a href="https://github.com/Joao-Neto-DH" target="_blank">Gitub</a></li>
+        <li><a href="https://www.linkedin.com/in/jo%C3%A3o-neto-aa2481225/" target="_blank">Linkedln</a></li>
     </ul>
