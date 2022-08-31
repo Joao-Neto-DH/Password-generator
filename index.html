@@ -57,7 +57,7 @@
                     <div class="card-body py-4">
                         <div class="input-group">
                             <input type="text" name="password" id="password" class="form-control round-0 text-center" readonly placeholder="Palavra-passe">
-                            <button class="input-group-text" type="button">
+                            <button class="input-group-text" type="button" id="btn-copy">
                                 <i class="ri-clipboard-line"></i>
                             </button>
                         </div>
@@ -73,7 +73,7 @@
     </main>
     <footer class="position-absolute bottom-0 start-0 end-0 pb-2">
         <p class="h6 text-center">
-            Feito por João Neto
+            Feito por <a href="https://github.com/Joao-Neto-DH" target="_blank">João Neto</a>
         </p>
     </footer>
     <!-- Modal -->
@@ -93,7 +93,7 @@
                     </div>
                     <div class="col-12">
                         <div class="form-check">
-                            <label for="special-chars" class="form-check-label">Caracteres Especiais</label>
+                            <label for="special-chars" class="form-check-label">Caracteres Especiais [@,#,$]</label>
                             <input type="checkbox" name="special-chars" id="special-chars" class="form-check-input">
                         </div>
                     </div>
@@ -105,6 +105,18 @@
                     </button>
                 </div> -->
             </div>
+        </div>
+    </div>
+    <!-- Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                <span class="ms-auto">
+                    Senha copiada 
+                </span>
+            </div>
+            <div class="toast-body"></div>
         </div>
     </div>
     <!-- JavaScript Bundle with Popper -->

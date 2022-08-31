@@ -3,7 +3,11 @@ const passwordInput = document.getElementById("password");
 const btnGenerate   = document.getElementById("btn-generate");
 const quantityRange = document.getElementById("quantity");
 const specialsCheck = document.getElementById("special-chars");
+const btnCopy       = document.getElementById("btn-copy");
 const quantityValueSpan = document.getElementsByClassName("quantity-value")[0];
+//  dados do toast
+const toastComponent = document.getElementById('toast');
+const toast = new bootstrap.Toast(toastComponent);
 
 /**
  * Gera a senha segura
@@ -45,10 +49,20 @@ function callbackClickGenerate() {
  * Callback chamado quando há alteração do valor da quantidadr de caracteres
  * @param {Event} event 
  */
-function callbackInput(event) {
+function callbackInputRange(event) {
     quantityValueSpan.innerText = event.target.value;
+}
+function copyPassword() {
+    navigator.clipboard.writeText(passwordInput.value);
+
+    toastComponent.getElementsByClassName("toast-body")[0].innerText = passwordInput.value;
+
+    if (passwordInput.value.trim())
+        toast.show();
 }
 // console.log(btnGenerate);
 btnGenerate.addEventListener("click", callbackClickGenerate)
 // console.log(generatePassword(8));
-quantityRange.addEventListener("input", callbackInput);
+quantityRange.addEventListener("input", callbackInputRange);
+//  evento de cópia
+btnCopy.addEventListener("click", copyPassword);
