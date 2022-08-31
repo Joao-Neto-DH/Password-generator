@@ -1,10 +1,23 @@
 "use strict";
 const passwordInput = document.getElementById("password");
 const btnGenerate   = document.getElementById("btn-generate");
+const quantityRange = document.getElementById("quantity");
+const specialsCheck = document.getElementById("special-chars");
+const quantityValueSpan = document.getElementsByClassName("quantity-value")[0];
 
-function generatePassword(max) {
-    const letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","u","v","w","x","y","z",1,2,3,4,5,6,7,8,9,0];
+/**
+ * Gera a senha segura
+ * @param {int} max quantidade máxima de caracteres permitida na senha
+ * @param {boolean} specialChars permite a adicão de caracters especiais
+ * @returns senha gerada
+ */
+function generatePassword(max, specialChars = false) {
+    const specials = ["@","#","$"];
+    let letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","u","v","w","x","y","z",1,2,3,4,5,6,7,8,9,0];
     
+    if (specialChars) 
+        letters = letters.concat(specials);
+
     let pass = "";
     
     for (let i = 0; i < max; i++) {
@@ -18,11 +31,24 @@ function generatePassword(max) {
 
     return pass;
 }
-
+/**
+ * Trata o evento de clique no botão de gerar a senha
+ */
 function callbackClickGenerate() {
-    passwordInput.value = generatePassword(8);
+    let max = quantityRange.value;
+    let specials = specialsCheck.checked;
+
+    passwordInput.value = generatePassword(max, specials);
     // console.log("yes")
+}
+/**
+ * Callback chamado quando há alteração do valor da quantidadr de caracteres
+ * @param {Event} event 
+ */
+function callbackInput(event) {
+    quantityValueSpan.innerText = event.target.value;
 }
 // console.log(btnGenerate);
 btnGenerate.addEventListener("click", callbackClickGenerate)
 // console.log(generatePassword(8));
+quantityRange.addEventListener("input", callbackInput);
