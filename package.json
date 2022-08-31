@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/Joao-Neto-DH/Password-generator/issues"
   },
-  "homepage": "https://github.com/Joao-Neto-DH/Password-generator#readme",
-  "dependencies": {
-    "remixicon": "^2.5.0"
-  }
+  "homepage": "https://github.com/Joao-Neto-DH/Password-generator#readme"
 }
